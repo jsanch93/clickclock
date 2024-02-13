@@ -13,34 +13,36 @@
   
   <!--  Styles -->
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=ranade@100&display=swap" rel="stylesheet">
+
     
   <!-- Scripts -->
   <script src="js/time.js" defer></script>
   <script src="js/date.js" defer></script>
+  <script src="js/script.js" defer></script>
   
 </head>
+
+<!-- <a href="#">Light / Dark</a> -->
+
 <body>
-  
-<main>
-  
-  <!-- Time -->
-  <time class="time">
-          <data class="hours">HH</data> :
-          <data class="minutes">MM</data> :
-          <data class="seconds">SS</data>
-          <data class="amOrPM">AM/PM</data>
+  <p id="switcher">🌞 : 🌚</p>
+  <main>
+
+
+    <div class="box">
+      <time datetime="">
+        <data class="hours">HH</data> :
+        <data class="minutes">MM</data> 
+        <data class="seconds">SS</data><br>
+        <data class="year">0000</data> 
+        <data class="month">Month</data>
+        <data class="dayOfMonth">00</data> <br>
+        <data class="dayOfWeek">SMTWTFS</data>
       </time>
-
+      
+    </div>
     
-  <!-- Date -->
-  <time class="date">
-    <data class="month">Month</data>
-    <data class="dayOfMonth">00</data>,
-    <data class="year">0000</data> -
-    <data class="dayOfWeek">SMTWTFS</data>
-  </time>
-
-</main>
-  
+  </main>  
 </body>
 </html>

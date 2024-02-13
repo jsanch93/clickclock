@@ -1,71 +1,76 @@
+/******
+DATE
+******/
 /************
 Static Data
 ************/
 const allTheMonths = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12"
 ];
 const allTheDays = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
+  "Sun",
+  "Mon",
+  "Tues",
+  "Wed",
+  "Thurs",
+  "Fri",
+  "Sat"
 ];
 
 /************
 Dynamic Data
 ************/
+// define `theClockApp` stored in function to be ran
+// const theClockApp = () => {
+  
 // Get and store current date and time with `new Date()` object
-const dateNow = new Date();
-
+const now = new Date();
 // Check-Check: See all `Date()` methods and properties
-console.log( dateNow );
+console.log( now );
 
-const gotMonth = dateNow.getMonth();
+
+/************
+GET the Data
+************/
+// Get current month
+const gotMonth = now.getMonth();
 // Get current day of the month
-let gotDayOfMonth = dateNow.getDate();
+let gotDayOfMonth = now.getDate();
 // Get current year
-const gotYear = dateNow.getFullYear();
+const gotYear = now.getFullYear();
 // Get current day of the week
-const gotDayOfWeek = dateNow.getDay();
-
-// Check-Check: Is the data correct? 
-console.log(gotMonth, gotDayOfMonth, gotYear, gotDayOfWeek);
+const gotDayOfWeek = now.getDay();
 
 /************
 Get DOM Elements
 ************/
-// Get the month
-const month = document.querySelector(".month");
-// Get day of the month
-const dayOfMonth = document.querySelector(".dayOfMonth");
-// Get year
-const year = document.querySelector('.year');
-// Get Day of Week
-const dayOfWeek = document.querySelector('.dayOfWeek');
 
+const month = document.querySelector('.month');
+
+const date = document.querySelector('.dayOfMonth');
+
+const year = document.querySelector('.year');
+
+const day = document.querySelector('.dayOfWeek');
 
 /************
-Set DOM Elements
+SET the Data
 ************/
-// Set the month
-month.innerText = allTheMonths[gotMonth];
-// Set day of the month
-dayOfMonth.innerText = gotDayOfMonth;
-// Set the year
-year.innerText = gotYear;
-// Set the day of the week
-dayOfWeek.innerText = allTheDays[gotDayOfWeek];
+month.textContent = allTheMonths[gotMonth];
+
+date.textContent = gotDayOfMonth;
+
+year.textContent = gotYear;
+
+day.textContent = allTheDays[gotDayOfWeek];
