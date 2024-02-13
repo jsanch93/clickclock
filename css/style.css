@@ -1,0 +1,19 @@
+/* Diagnostic */
+
+* {
+  outline: 1px dotted darkgray;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+/* Layout  */
+main {
+  width: 1194px;
+  height: 834px;
+}
+
