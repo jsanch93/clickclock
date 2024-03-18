@@ -1,10 +1,15 @@
 body {
   font-family: 'Ranade', sans-serif;
-   color:#333;
-   background: blanchedalmond;
-  }
+   color:#FFB5DA;
+   height: 100vh;
+   background-image: radial-gradient(circle farthest-corner at 100% 0%, #FFFF80 15%, rgba(220, 0, 0, 1) 40%, rgba(50, 0, 0, 1) 90%);
+   background-attachment:fixed;
+   
+ }
+  
   
 
+  
 main {
   font-size: 4em;
   
@@ -18,8 +23,11 @@ main {
 
 /* dark mode */
 .dark {
-  background: #333;
-  color: blanchedalmond;
+  height: 100vh;
+  background-image: radial-gradient(circle farthest-corner at 100% 0%, #FFEBCD 15%, rgba(300, 0, 90, 1) 40%, rgba(50, 0, 70, 1) 90%);
+  background-attachment:fixed;
+  
+
 }
 
 #switcher {
